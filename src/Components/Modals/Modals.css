@@ -1,0 +1,35 @@
+.modal{
+    display: none;
+}
+
+.modal[data-visible="true"]{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+}
+.modal[data-visible="true"] .modal__backdrop{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal__view{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    background-color: var(--clr-primary-neutral-000);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.modal__view__actions{
+    width: 100%;
+}

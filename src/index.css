@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display:swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  /* color system */
+  --clr-light-gray : #f6f7f9;
+  --clr-dark-gray :#1A202C;
+
+  --clr-neutral : #3D5278;
+      /* accent */
+  --clr-accent : #3563E9;
+  --clr-accent-50 : #e7ecfc;
+  --clr-accent-100 : #c2d0f8;
+  --clr-accent-200 : #9ab1f4;
+  --clr-accent-300 : #7292f0;
+  --clr-accent-400 : #537aec;
+  --clr-accent-500 : #3563e9;
+  --clr-accent-600 : #305be6;
+  --clr-accent-700 : #2851e3;
+  --clr-accent-800 : #2247df;
+  --clr-accent-900 : #1635d9;
+  
+      /* primary neutral */
+  --clr-primary-neutral-900 : #1D1178;
+  --clr-primary-neutral-800 : #2D1D92;
+  --clr-primary-neutral-700 : #432EB5;
+  --clr-primary-neutral-600 : #5E43D8;
+  --clr-primary-neutral-500 : #7C5CFC;
+  --clr-primary-neutral-400 : #9F84FD;
+  --clr-primary-neutral-300 : #B49DFE;
+  --clr-primary-neutral-200 : #CEBEFE;
+  --clr-primary-neutral-100 : #E7DEFE;
+  --clr-primary-neutral-000 : #ffffff;
+      /* success */
+  --clr-success-900 : #3B6506;
+  --clr-success-800 : #4C7A0B;
+  --clr-success-700 : #659711;
+  --clr-success-600 : #7FB519;
+  --clr-success-500 : #9CD323;
+  --clr-success-400 : #BCE455;
+  --clr-success-300 : #D3F178;
+  --clr-success-200 : #E8FAA6;
+  --clr-success-100 : #F5FCD2;
+      /* error */
+  --clr-error-900 : #7A0619;
+  --clr-error-800 : #930B16;
+  --clr-error-700 : #B71112;
+  --clr-error-600 : #DB2719;
+  --clr-error-500 : #FF4423;
+  --clr-error-400 : #FF7F59;
+  --clr-error-300 : #FFA37A;
+  --clr-error-200 : #FFC8A6;
+  --clr-error-100 : #FFE7D3;
+      /* warning */
+  --clr-warning-900 : #7A4D0B;
+  --clr-warning-800 : #936312;
+  --clr-warning-700 : #B7821D;
+  --clr-warning-600 : #DBA32A;
+  --clr-warning-500 : #FFC73A;
+  --clr-warning-400 : #FFD96B;
+  --clr-warning-300 : #FFE488;
+  --clr-warning-200 : #FFEFB0;
+  --clr-warning-100 : #FFF8D7;
+      /* info */
+  --clr-info-900 : #102E7A;
+  --clr-info-800 : #1A4393;
+  --clr-info-700 : #2A60B7;
+  --clr-info-600 : #3D81DB;
+  --clr-info-500 : #54A6FF;
+  --clr-info-400 : #7EC2FF;
+  --clr-info-300 : #98D3FF;
+  --clr-info-200 : #BAE5FF;
+  --clr-info-100 : #DCF3FF;
+      /* secondary */
+  --clr-secondary-900 : #040815;
+  --clr-secondary-800 : #080C19;
+  --clr-secondary-700 : #0D121F;
+  --clr-secondary-600 : #131825;
+  --clr-secondary-500 : #1A202C;
+  --clr-secondary-400 : #596780;
+  --clr-secondary-300 : #90A3BF;
+  --clr-secondary-200 : #C3D4E9;
+  --clr-secondary-100 : #E0E9F4;
+
+  /*text*/
+      /* font weight */
+  --w-regular : 400;
+  --w-medium : 500;
+  --w-semi-bold : 600;
+  --w-bold : 700;
+      /* font size */
+  --f-12 : 0.75rem;
+  --f-14 : 0.875rem;
+  --f-16 : 1rem;
+  --f-18 : 1.125rem;
+  --f-20 : 1.25rem;
+  --f-24 : 1.5rem;
+  --f-32 : 2rem;
+  --f-36 : 2.25rem;
+  --f-40 : 2.5rem;
+      /* font family */
+  --ff-base : "Plus Jakarta Sans" , sans-serif;
+
+
+}
+
+body,html{
+  min-height: 100%;
+}
+/* CSS RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a,button{
+  cursor: pointer;
+}
+a , a:active{
+  text-decoration: none;
+  color: var(--clr-accent-500);
+}
+a:hover,a:visited{
+  color: var(--clr-accent-500);
+}
+/* utility classes */
+
+/* colors */
+    /* background */
+
+.bg-accent{
+  background-color: var(--clr-accent);
+}
+
+.bg-white{
+  background-color: var(--clr-primary-neutral-000);
+}
+
+.bg-lightgray{
+  background-color: var(--clr-light-gray);
+}
+
+  /* text */
+
+.text-linethrough{
+  text-decoration: line-through;;
+}
+.text-center{
+  text-align: center;
+}
+
+.text-start{
+  text-align: start;
+}
+.text-end{
+  text-align: end;
+}
+.text-dark{
+  color: var(--clr-secondary-500);
+}
+.text-almost-black {
+  color: var(--clr-dark-gray);
+}
+.text-light{
+  color: var(--clr-secondary-300);
+}
+
+.text-neutral{
+  color: var(--clr-neutral);
+}
+
+.text-accent{
+  color: var(--clr-accent);
+}
+
+.text-secondary400{
+  color: var(--clr-secondary-400);
+}
+/* font  weight*/
+.font-base{
+  font-family: var(--ff-base);
+}
+.fw-regular{
+  font-weight: var(--w-regular);
+}
+.fw-medium{
+  font-weight: var(--w-medium);
+}
+
+.fw-semibold{
+  font-weight: var(--w-semi-bold);
+}
+.fw-bold{
+  font-weight: var(--w-bold);
+}
+
+/* font size */
+
+.fs-xs{
+  font-size: var(--f-12);
+}
+
+.fs-sm{
+  font-size: var(--f-14);
+}
+
+.fs-base{
+  font-size: var(--f-16);
+}
+
+.fs-lg{
+  font-size: var(--f-18);
+}
+
+.fs-xl{
+  font-size: var(--f-20);
+}
+
+.fs-2xl{
+  font-size: var(--f-24);
+}
+
+.fs-3xl{
+  font-size: var(--f-32);
+}
+
+.fs-4xl{
+  font-size: var(--f-36);
+}
+
+.fs-5xl{
+  font-size: var(--f-40);
+}
+

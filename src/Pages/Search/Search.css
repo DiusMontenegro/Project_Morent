@@ -1,0 +1,23 @@
+@media (max-width:768px){
+    .sidebar{
+        display:none;
+    }
+    .sidebar[data-visible=true]{
+        position:fixed;
+        display:block;
+        overflow-y:scroll;
+        top:0;
+        bottom:0;
+    }
+    .filter {
+        overflow-y:scroll;
+        width: 18rem;
+        position:fixed;
+        top:0;
+        transition:all .5s;
+        right:-100%
+    }
+    .sidebar[data-visible=true]  .filter{
+        right:0;
+    }
+}

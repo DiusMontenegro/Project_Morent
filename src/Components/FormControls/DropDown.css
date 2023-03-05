@@ -1,0 +1,27 @@
+.dropdown{
+    z-index: 9999;
+    background-color: var(--clr-primary-neutral-000);
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    max-height: 18rem;
+    overflow-y: scroll;
+    transition: all .25s ease;
+}
+
+.dropdown[data-visible="false"]{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown__option{
+    cursor: pointer;
+}
+
+.dropdown__option:hover{
+    background-color: var(--clr-secondary-100);
+}
+.dropdown__option:active{
+    background-color: var(--clr-secondary-200);
+}

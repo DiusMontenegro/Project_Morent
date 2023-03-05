@@ -1,0 +1,8 @@
+.checkbox:checked ~ .checkmark{
+    @apply bg-accent-500
+    
+}
+
+.checkbox:not(:checked) ~ .checkmark .checkmark__icon{
+    @apply opacity-0
+}

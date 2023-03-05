@@ -1,0 +1,33 @@
+
+.dropdown{
+    background-color: var(--clr-primary-neutral-000);
+    position: absolute;
+    top: 0;
+    max-height: 18rem;
+    overflow-y: scroll;
+}
+
+.dropdown[data-visible="false"]{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s;
+}
+
+.dropdown__option{
+    cursor: pointer;
+}
+
+.dropdown__option:hover{
+    background-color: var(--clr-secondary-100);
+}
+.dropdown__option:active{
+    background-color: var(--clr-secondary-200);
+}
+
+.rental-form__separator{
+    min-height: 100%;
+    width: 0;
+    border: 1px solid var(--clr-secondary-100);
+    opacity: .5;
+    border-radius: 2px;
+}

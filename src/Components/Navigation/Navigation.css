@@ -1,0 +1,30 @@
+
+.search-wrapper[data-visible=true]{
+    top:0
+}
+/*
+.top-nav__right{
+    margin-left: auto;
+}
+.top-nav__pfp{
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+*/
+
+.bottom-nav__col a , .bottom-nav__col a:visited{
+    text-decoration: none;
+    color: var(--clr-neutral);
+}
+.bottom-nav__col a:hover , .bottom-nav__col a:active{
+    text-decoration: underline;
+}
+
+
+
+.legal a{
+    font-weight: var(--w-bold);
+    color: var(--clr-secondary-500);
+    text-decoration: none;
+}

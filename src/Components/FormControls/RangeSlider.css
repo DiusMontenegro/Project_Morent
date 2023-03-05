@@ -1,0 +1,24 @@
+
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  @apply bg-accent-500 drop-shadow-sm;
+
+}
+input[type="range"]::-moz-range-thumb {
+    pointer-events: auto;
+    border:none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    -moz-appearance: none;
+    @apply bg-accent-500 drop-shadow-sm;
+  
+  }
+input[type=range]{
+    background:none;
+    pointer-events:none;
+}
